@@ -1,0 +1,29 @@
+.section{
+    
+    background-color: #2c3e50 !important;
+}
+.copyright{
+    background-color: #1a252f !important;
+}
+.container{
+    width:70% !important
+}
+.row div p{
+    font-size: 20px !important;
+}
+h1{
+    font-size: 48px !important;
+    }
+.icon{
+border: 1px solid white;
+width: 3rem;
+height: 3rem;
+    }
+    .icon:hover{
+        cursor: pointer;
+        background-color: white !important;
+    }
+    
+    .icon:hover i{
+        color: #2c3e50 !important;
+    }

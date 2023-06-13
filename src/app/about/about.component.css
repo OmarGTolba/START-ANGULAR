@@ -1,0 +1,13 @@
+.section{
+    background-color:#1abc9c ;
+}
+#line{
+    height: 5px !important;
+    border-radius: 20px !important;
+    background-color: #fff  !important;
+    width: 7rem !important;
+}
+h1{
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    }

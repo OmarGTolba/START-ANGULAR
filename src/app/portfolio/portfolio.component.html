@@ -1,0 +1,71 @@
+<div class="container w-75 overflow-hidden m-auto position-relative mt-5 py-5 text-center" id="portfolio">
+    <h1 class="title mt-5 mb-3">PORTFOLIO</h1>
+    <div class="d-flex my-4 align-items-center justify-content-center"> <div id="line"></div> <i class="fa-solid fa-star fs-4  p-2"></i> <div id="line"></div></div>
+
+    <div class="row gy-5  " (click)="getSrc($event)">
+        
+        <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="item position-relative">
+          <img src="/assets/images/cabin.png" id="LOG CABIN" class=" w-100 rounded-3" alt="">
+<div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+          </div>
+          <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="item  position-relative">
+            <img src="/assets/images/cake.png" id="TASTY CAKE" class=" w-100 rounded-3" alt="">
+  <div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+            </div>
+          
+            <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="item position-relative">
+              <img src="/assets/images/circus.png" id="CIRCUS TENT" class=" w-100 rounded-3" alt="">
+    <div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+              </div>
+              <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="item position-relative">
+                <img src="/assets/images/safe.png" id="LOCKED SAFE" class=" w-100 rounded-3" alt="">
+      <div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+                </div>
+                <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="item  position-relative">
+                  <img src="/assets/images/game.png" id="CONTROLLER" class=" w-100 rounded-3" alt="">
+        <div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+                  </div>
+                  <div class="col-md-4 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="item  position-relative">
+                    <img src="/assets/images/submarine.png" id="SUBMARINE" class=" w-100 rounded-3" alt="">
+          <div class="overlay  justify-content-center align-items-center w-100 h-100"><i class="fa-solid fa-plus text-white"></i></div></div>
+                    </div>
+              
+        
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl  m-auto">
+      <div class="modal-content w-100">
+        <div class=" position-relative d-flex justify-content-center align-items-center border-0">
+      
+          <div class="text-center pt-5">
+            <h1 class="title ">{{imgName}}</h1>
+            <div class="d-flex my-4 align-items-center justify-content-center"> <div id="line"></div> <i class="fa-solid fa-star fs-4  p-2"></i> <div id="line"></div></div>
+        
+          </div>
+          <i class="fa-solid fa-xmark position-absolute top-0 end-0 pe-3  fs-1 pt-3" id="X" data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+      
+        <div class="modal-body border-0 w-100 h-100 d-flex justify-content-center">
+         
+            <img id="A" src="{{username}}" class="  m-auto   " alt="">
+
+        </div>
+        <div class="modal-footer text-center border-0 d-flex justify-content-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+          <button type="button" class="btn btn-secondary my-3" id="closeBtn" data-bs-dismiss="modal"> <i class="fas fa-times fa-fw  fs-6 mx-1 text-white"></i>Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,56 @@
+<div class="section my-5 py-5 ">
+    <h1 class="mt-5 mb-3 text-center">CONTACT ME</h1>
+    <div class="d-flex my-4 align-items-center justify-content-center"> <div id="line"></div> <i class="fa-solid fa-star fs-4  p-2"></i> <div id="line"></div></div>
+<div class="container pt-5 w-50 m-auto ">
+    
+    <div class="form pt-5">
+        <div
+            class="form-group py-3 position-relative d-flex flex-column justify-content-center align-content-center  border-bottom">
+            <label #nameLabel class="position-relative   ">name</label>
+
+            <input #nameInput type="text" (keyup)="validName(nameInput,nameValid,nameLabel)" placeholder="Name"
+                class="pt-2 pb-4 ps-1  border-0 position-relative   w-100">
+                <div #nameValid class=" d-flex ps-3 d-none align-items-center">
+                    <i class="fa-solid fa-circle  "></i>
+            <p class="position-relative   m-0     ">  not valid</p>
+        </div>
+    </div>
+
+        <div
+            class="form-group py-3 position-relative d-flex flex-column justify-content-center align-content-center  border-bottom">
+            <label #label class="position-relative   ">Email</label>
+
+            <input #inp type="text" (keyup)="validEmail(inp,valid,label)" placeholder="Email"
+                class=" pt-2 pb-4 ps-1 border-0 position-relative   w-100">
+           <div #valid class=" d-flex d-none ps-3 d-none align-items-center">
+            <i class="fa-solid fa-circle  "></i>
+                <p  class="position-relative   m-0 ">Not Valid Email address</p>
+        </div></div>
+
+        <div
+            class="form-group py-3 position-relative d-flex flex-column justify-content-center align-content-center  border-bottom">
+            <label #phoneLabel class="position-relative   ">Phone number</label>
+
+            <input #phoneInput type="text" (keyup)="validPhone(phoneInput,phoneValid,phoneLabel)" placeholder="Phone Number"
+                class=" pt-2 pb-4 ps-1 border-0 position-relative   w-100">
+          <div #phoneValid class="d-flex d-none ps-3 d-none align-items-center">
+            <i class="fa-solid fa-circle"></i>
+                <p  class="position-relative  m-0 ps-2">not valid</p>
+        </div></div>
+        
+        <div
+            class="form-group py-3 position-relative d-flex flex-column justify-content-center align-content-center  border-bottom">
+            <label #messageLabel class="position-relative   ">Message</label>
+<textarea #messageInput placeholder="Message" type="text" (keyup)="validMessage(messageInput,messageValid,messageLabel)" 
+class=" py-3 border-0  w-100"  name="" id=""  rows="4"></textarea>
+                <p #messageValid class="position-relative d-none  m-0 ps-2"><i class="fa-solid fa-circle"></i>not valid</p>
+        </div>
+<div #sendMsg id="sendmsg" class="position-relative d-none ">
+    <p class="pt-2">Sorry {{userName}}, it seems that my mail server is not responding. Please try again later!</p>
+    <i class="fa-solid fa-xmark position-absolute top-0 end-0  pe-3   pt-3 " (click)="close(sendMsg)"></i>
+</div>
+        <button id="Send" (click)="check(nameValid,nameInput,inp,valid,phoneValid,phoneInput,messageInput,messageValid,sendMsg)">SEND</button>
+    </div>
+
+</div>
+</div>
